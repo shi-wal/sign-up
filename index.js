@@ -41,7 +41,11 @@ function validateform() {
         return false;
     }
 
-  
+    if (isNaN(mobile)){  
+        alert("Mobile no. should have only numeric digits.");
+        return false;  
+      }
+
     if (mobile.length != 10) {
         alert("Mobile no. should be of 10 digits.");
         return false;
