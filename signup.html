@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+    background-image: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    </style>
+    <!-- Bootstrap CDN included here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Included Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Included Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Yanone+Kaffeesatz&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div id="signUpModal" class="modals">
+        <!-- Modal content -->
+        <div class="modalContent">
+            <a href="index.html">
+            <span class="closed">&times;</span>
+        </a>
+            <div class="modalHeader">
+                <h2>Get Started</h2>
+            </div>
+            <div class="modalBody">
+                <form name="myform" method="GET" action="vaild.html" onsubmit="return validateform()" >
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="formControl" name="firstname" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="formControl" name="lastname" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="formControl" name="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="formControl" name="age" placeholder="Enter your Age"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="formControl" name="dob" placeholder="Enter your DOB"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile No.</label>
+                        <input type="number" class="formControl" name="mobile" placeholder="Enter your Mobile No."
+                            required>
+                    </div>
+                    <input type="submit" class="greenButton" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
