@@ -122,6 +122,14 @@
       opacity: 0.8;
       cursor: pointer;
   }
+  .form-group{
+    margin-bottom: 0!important;
+  }
+  .error{
+    font-size: 15.5px;
+    color: red;
+    margin-bottom: 1rem;
+  }
 
 
   /* Responsive styling starts here */
