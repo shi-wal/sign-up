@@ -7,7 +7,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .main-text h1{
-    font-size: 45px;   
+    font-size: 45px;
+    text-align: center; 
+}
+.main-text h2{
+  text-align: center; 
 }
 .main-text a{
     font-size: 22px;   
@@ -117,4 +121,43 @@
   .greenButton:hover{
       opacity: 0.8;
       cursor: pointer;
+  }
+
+
+  /* Responsive styling starts here */
+  @media (max-width:680px){
+    .main-text h1{
+      font-size: 32px;
+    }
+    .main-text a{
+      font-size: 21px;
+    }
+    .modalContent{
+      width: 60%;
+    }
+  }
+  @media (max-width:435px){
+    .main-text h1{
+      font-size: 28px;
+    }
+    .main-text h2{
+      font-size: 20px;
+    }
+    .main-text a{
+      font-size: 20px;
+    }
+    .modalContent{
+      width: 70%;
+    }
+  }
+  @media (max-width:370px){
+    .main-text h1{
+      font-size: 27px;
+    }
+    .main-text a{
+      font-size: 19px;
+    }
+    .modalContent{
+      width: 80%;
+    }
   }
